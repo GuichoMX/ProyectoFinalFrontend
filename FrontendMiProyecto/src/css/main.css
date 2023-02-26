@@ -1,0 +1,722 @@
+/* ----------------- REGISTER ----------------- */
+small{
+  color: white;
+}
+
+
+
+/* Hero de propiedades */
+
+.hero-propiedades {
+  width: 80%;
+  height: 70px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: url("../../assets/img/fondo.jpg") center;
+  background-size: cover;
+}
+
+.hero-propiedades .hero-contenedor {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-propiedades h1{
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Sección de propiedades */
+
+section {
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.propiedades-caja {
+  color: #444444;
+  box-shadow: 0 0 30px rgba(119, 120, 121, 0.6);
+  height: 100vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px;
+  overflow-y: scroll;
+}
+
+.propiedades .contenido-propiedades {
+display: flex;
+flex-direction: row;
+color: #444444;
+box-shadow: 0 0 30px rgba(119, 120, 121, 0.6);
+padding: 20px;
+margin: 20px;
+height: 250px;
+}
+
+.propiedades .propiedades-caja .propiedades-params{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+
+.propiedades .propiedades-caja .casa-img{
+display: flex;
+justify-content: center;
+align-content: center;
+height: 85%;
+width: 20%;
+padding: 30px 0;
+}
+
+.propiedades .propiedades-caja .casa-img img{
+height: 100%;
+width: 100%;
+}
+
+.casa-contenido{
+display: flex;
+flex-direction: row;
+height: 100%;
+width: 100%;
+}
+
+.casa-contenido .contenido-izquierda,.contenido-derecha{
+padding: 20px;
+}
+
+.casa-contenido label{
+margin: 5px;
+}
+
+.casa-contenido .contenido-izquierda{
+width: 60%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+
+.casa-contenido .contenido-izquierda .espacio{
+margin-top: 20px;
+height: 40px;
+}
+
+.casa-contenido .contenido-izquierda input{
+width: 100%;
+}
+
+.casa-contenido .contenido-derecha{
+width: 40%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+
+.casa-contenido .contenido-derecha input{
+width: 100%;
+}
+
+.btnEdicion{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 10px;
+padding: 0;
+text-align: center;
+}
+
+.btnEdicion a{
+display: flex;
+align-self: center;
+margin: 0 10px;
+color: #1E1E92;
+}
+
+
+.btnEdicion button{
+margin: 0 10px;
+padding: 2px 10px;
+width: 100px;
+border-radius: 15px;
+background-color: #1E1E92;
+color: white;
+border: none;
+border-bottom: 4px solid black;
+}
+
+.boton:active{
+background-color: #1E3F92;
+width: 95px;
+}
+  
+  
+  /* Botón back to top */
+  .back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #1E1E92;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #1E3F92;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Sección del Hero */
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/img/fondo.jpg") top center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .contenedor-hero {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  #hero h3 {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 26px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  
+  /* Sección general */
+
+  section {
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .section-caja {
+    color: #444444;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+  }
+  
+/* Sección acerca de */
+
+.acercaDe .contenido {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+.acercaDe h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.acercaDe h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1E1E92;
+}
+
+.acercaDe p {
+  margin: 15px 0 30px 0;
+}
+
+.acercaDe .section-caja  .acercaDeImagen{
+  display: flex;
+  align-items: center;
+
+}
+
+.caja-info h1{
+  color: #1E1E92;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.acercaDe .section-caja .caja-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Sección de contacto */
+
+.section-contacto {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-contacto h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #1E1E92;
+  position: relative;
+  z-index: 2;
+}
+
+.section-contacto span {
+  position: absolute;
+  top: 30px;
+  color: #F0F0F0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.contacto .info-box {
+  color: #444444;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px;
+}
+
+.contacto .info-box iconify-icon {
+  font-size: 32px;
+  color: #1E3F92;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #1E7092;
+  float: left;
+}
+
+.contacto .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0 10px 68px;
+}
+
+.contacto .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+}
+
+.contacto .section-caja .contacto-params{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Responsive Index */
+
+/* Version telefono */
+@media screen and (max-width:480px) {
+  .contacto .section-caja .contacto-params{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-contacto span {
+    position: absolute;
+    top: 30px;
+    color: #F0F0F0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+}
+
+/* Version tablet */
+@media screen and (max-width:768px) {
+  .contacto .section-caja .contacto-params{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-contacto span {
+    position: absolute;
+    top: 30px;
+    color: #F0F0F0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+}
+
+/* Version desktop */
+@media screen and (max-width:992px) {
+  .contacto .section-caja .contacto-params{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+/* ------------------- LOGIN STYLES ------------------- */
+
+
+.main-login{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../assets/img/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-login{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.contenedor-form{
+margin-top: 6%;
+background-color: #0a1e35;
+border-radius: 20px;
+padding: 40px;
+opacity: 0.9;
+height: 500px;
+width: 420px;
+}
+
+.img-login{
+width: 100px;
+height: 100px;
+margin-left: 110px;
+}
+
+.main-login .contenedor-login .contenedor-form h2{
+text-align: center !important;
+color: white !important;
+}
+
+.boton-login{
+  width: 150px;
+  border-radius: 15px;
+  background-color: #1E1E92;
+  color: white;
+  margin-top: 50px;
+  border: none;
+  border-bottom: 4px solid black;
+  margin-left: 80px;
+  }
+
+#formulario-login .input-login{
+display: block;
+width: 300px;
+height: 40px;
+margin-bottom: 20px;
+padding: 0 15px;
+font-size: 18px;
+outline: none;
+border: none;
+background: transparent;
+color: white;
+border-bottom: 2px solid white;
+}
+
+.checkbox-form{
+width: 15px !important;
+height: 15px !important;
+display: inline !important;
+}
+
+#formulario-login label{
+color: white;
+margin-bottom: 0.5rem;
+margin-top: 2rem;
+}
+
+.contrasena-olvidada{
+color: white  !important;
+text-decoration: none !important;
+margin-left: 45px !important;
+}
+
+.contrasena-olvidada:hover{
+color: #1E3F92;
+}
+
+label:hover{
+color: #1E3F92;
+}
+
+.boton:active{
+background-color: #1E3F92;
+width: 145px;
+}
+
+/* --------------------- SECCION USUARIOS --------------------- */
+  /* Sección de usuarios */
+
+  .usuarios-caja {
+    color: #444444;
+    box-shadow: 0 0 30px rgba(119, 120, 121, 0.6);
+    height: 100vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+  }
+
+.usuarios .contenido-propiedades {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: #444444;
+  box-shadow: 0 0 30px rgba(119, 120, 121, 0.6);
+  padding: 20px;
+  margin: 20px;
+  height: 200px;
+}
+
+.usuarios .usuarios-caja .propiedades-params{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  place-items:  center;
+  height: 100%;
+}
+
+.usuarios .usuarios-caja .usuario-img{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 110px;
+  width: 150px;
+  align-self: center;
+}
+
+.usuarios .usuarios-caja .usuario-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.casa-contenido{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.casa-contenido .contenido-izquierda,.contenido-derecha{
+  padding: 20px;
+}
+
+.casa-contenido label{
+  margin: 5px;
+  width: auto;
+}
+
+.casa-contenido .contenido-derecha{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.casa-contenido .contenido-derecha input{
+  width: 100%;
+}
+
+.btnEdicion{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0;
+  text-align: center;
+  height: 30px;
+}
+
+.btnEdicion a{
+  display: flex;
+  color: #1E1E92;
+  align-self: center;
+  margin: 5px;
+}
+
+.btnEdicion iconify-icon{
+  display: flex;
+  color: #1E1E92;
+  align-self: center;
+}
+
+.btnEdicion button{
+  margin: 0 2px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #1E1E92;
+  color: white;
+  border: none;
+  border-bottom: 4px solid black;
+}
+
+.boton:active{
+  background-color: #1E3F92;
+  width: 95px;
+}
+
+
+/* ------------------------ SECCION CREAR USUARIOS -------------------- */
+.contenedor-form-huesped{
+  margin-top: 6%;
+  background-color: #0a1e35;
+  border-radius: 20px;
+  padding: 40px;
+  opacity: 0.9;
+  height: 800px;
+  width: 420px;
+  }
+  
+  .main-login .contenedor-login .contenedor-form-huesped h2{
+  text-align: center !important;
+  color: white !important;
+  }
+
+/* Responsive usuarios */
+
+/* Version telefono */
+@media screen and (max-width:480px) {
+  .usuarios .usuarios-caja .propiedades-params{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    place-items:  center;
+    height: 100%;
+  }
+}
+
+/* Version tablet */
+@media screen and (max-width:768px) {
+  .usuarios .usuarios-caja .propiedades-params{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    place-items:  center;
+    height: 100%;
+  }
+}
+
+  /* Hero de propiedades */
+
+  .hero-propiedades {
+    width: 80%;
+    height: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: url("../assets/img/fondo.jpg") center;
+    background-size: cover;
+  }
+  
+  .hero-propiedades .hero-contenedor {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-propiedades h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: white;
+  }
+  
