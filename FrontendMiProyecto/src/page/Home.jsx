@@ -1,6 +1,9 @@
 import aboutPic from "../assets/img/about_section.jpg"
 
 export const Home = () => {
+    const logOut = () => {
+        AuthService.logout();
+    };
     return (
         // <section className="title">
         //     Home page
@@ -35,6 +38,7 @@ export const Home = () => {
                                 <li><a class="nav-link scrollto" href="huespedes">Huespedes</a></li>
                                 <li><a class="nav-link scrollto" href="propiedades">Propiedades</a></li>
                                 <li><a class="nav-link scrollto" href="login">Log in</a></li>
+                                <li><a class="nav-link scrollto" href="home" onClick={logOut}>Log out</a></li>
                                 <li><a class="nav-link scrollto" href="register">Register</a></li>
                             </ul>
                             <i class="bi bi-list mobile-nav-toggle"></i>
