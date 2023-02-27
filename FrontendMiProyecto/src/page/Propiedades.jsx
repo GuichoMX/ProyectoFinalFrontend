@@ -2,6 +2,7 @@ import { gql, useQuery } from '@apollo/client'
 import { useNavigate } from 'react-router-dom'
 import { AuthService } from '../auth'
 import { Propiedad } from '../component/Propiedad'
+import { Link } from "react-router-dom";
 
 const GET_PROPIEDADES = gql`
 query GetPropiedades {
@@ -52,6 +53,7 @@ export const Propiedades = () => {
                 </div>
                 <section id="propiedades" class="propiedades">
                     <div class="propiedades-caja">
+                    <button><Link to="/createpropiedad">Create Property</Link></button>
                         <div class="propiedades-params" id="contenidoMain">
                             {
                                 data.getAllPropiedades.map((propiedad) => <Propiedad key={propiedad.id_propiedad} data={propiedad} />)

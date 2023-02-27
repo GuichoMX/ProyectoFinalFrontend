@@ -45,6 +45,7 @@ export const CreateHuesped = () => {
     const [genero, setGenero] = useState("");
     const [propiedadAsignada, setPropiedadAsignada] = useState("");
 
+    
     const [mutateFunction, { data, loading, error }] = useMutation(createUserMutationGQL, {
         onError: (err) => {
             console.log("API error", err)
@@ -56,7 +57,9 @@ export const CreateHuesped = () => {
     const handleCreationUser = async (e) => {
         e.preventDefault();
         mutateFunction({ variables: { nombres, apellidoP, apellidoM, edad, pais, ciudad, num_contacto, num_referencia, genero, propiedadAsignada } });
+        console.log({ variables: { nombres, apellidoP, apellidoM, edad, pais, ciudad, num_contacto, num_referencia, genero, propiedadAsignada } });
     };
+
 
     return (
 
@@ -68,18 +71,21 @@ export const CreateHuesped = () => {
                         <input type="text" class="input-login" placeholder="Nombres" id="txt_usuario" required="" value={nombres} onChange={(e) => setNombres(e.target.value)} />
                         <input type="text" class="input-login" placeholder="Apellido Paterno" id="txt_usuario" required="" value={apellidoP} onChange={(e) => setApellidoP(e.target.value)} />
                         <input type="text" class="input-login" placeholder="Apellido Materno" id="txt_usuario" required="" value={apellidoM} onChange={(e) => setApellidoM(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Edad" id="txt_usuario" required="" value={edad} onChange={(e) => setEdad(e.target.value)} />
+                        <input type="text" class="input-login" placeholder="Edad" id="txt_usuario" required="" value={edad} onChange={(e) => setEdad(parseInt(e.target.value))} />
                         <input type="text" class="input-login" placeholder="Pais" id="txt_usuario" required="" value={pais} onChange={(e) => setPais(e.target.value)} />
                         <input type="text" class="input-login" placeholder="Ciudad" id="txt_usuario" required="" value={ciudad} onChange={(e) => setCiudad(e.target.value)} />
                         <input type="text" class="input-login" placeholder="Número de contacto" id="txt_usuario" required="" value={num_contacto} onChange={(e) => setNumContacto(e.target.value)} />
                         <input type="text" class="input-login" placeholder="Número de referencia" id="txt_usuario" required="" value={num_referencia} onChange={(e) => setNumReferencia(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Género" id="txt_usuario" required="" value={genero} onChange={(e) => setGenero(e.target.value)} />
+                        <select name="gender" class="user-gender" value={genero} onClick={(e) => setGenero(e.target.value)}>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                        </select>
                         <input type="text" class="input-login" placeholder="Propiedad asignada" id="txt_usuario" required="" value={propiedadAsignada} onChange={(e) => setPropiedadAsignada(e.target.value)} />
-                        <input class="boton-login" id="btnSubmit" type="submit" value="Registrar" />
+                        <input class="boton-create-huesped" id="btnSubmit" type="submit" value="Registrar" />
                     </form>
 
                     {data &&
-                        <small>Huésped {data.insertHuesped.nombres} registrado con éxito <Link to={"/huespedes"}>Ver Huéspedes</Link></small>
+                        <small>Huésped {data.insertHuespedes.nombres} registrado con éxito <Link onClick={() => {window.location.href="/huespedes"}}>Ver Huéspedes</Link></small>
                     }
 
                     {error &&
@@ -88,25 +94,5 @@ export const CreateHuesped = () => {
                 </div>
             </div>
         </div>
-
-
-        // <div>
-        //     <form onSubmit={handleSignup}>
-        //         <h3>Register</h3>
-        //         <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-        //         <input type="lastname" placeholder="Lastname" value={lastname} onChange={(e) => setLastname(e.target.value)} />
-        //         <input type="address" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        //         <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        //         <button type="submit">Register</button>
-        //     </form>
-
-        // {data &&
-        //     <small>Usuario {data.signUp.email} registrado con éxito <Link to={"/login"}>Ingresar</Link></small>
-        // }
-
-        // {error &&
-        //     <small>error al tratar de registrar a {email}</small>
-        // }
-        // </div>
     )
 } 

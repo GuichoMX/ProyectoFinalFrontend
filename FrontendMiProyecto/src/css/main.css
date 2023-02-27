@@ -667,6 +667,57 @@ width: 145px;
   color: white !important;
   }
 
+  .boton-create-huesped{
+    width: 150px;
+    border-radius: 15px;
+    background-color: #1E1E92;
+    color: white;
+    border: none;
+    border-bottom: 4px solid black;
+    margin-left: 80px;
+    }
+
+    .user-gender{
+      word-wrap: normal;
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: #0a1e35;
+    color: white;
+    border-bottom: 2px solid white;
+    }
+
+  /* ------------------------ SECCION CREAR PROPIEDADES -------------------- */
+.contenedor-form-propiedad{
+  margin-top: 6%;
+  background-color: #0a1e35;
+  border-radius: 20px;
+  padding: 40px;
+  opacity: 0.9;
+  height: 600px;
+  width: 420px;
+  }
+  
+  .main-login .contenedor-login .contenedor-form-propiedad h2{
+  text-align: center !important;
+  color: white !important;
+  }
+
+  .boton-create-propiedad{
+    width: 150px;
+    border-radius: 15px;
+    background-color: #1E1E92;
+    color: white;
+    border: none;
+    border-bottom: 4px solid black;
+    margin-left: 80px;
+    }
+
 /* Responsive usuarios */
 
 /* Version telefono */
