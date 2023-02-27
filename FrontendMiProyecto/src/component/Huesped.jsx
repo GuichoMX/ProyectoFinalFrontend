@@ -8,25 +8,25 @@ export const Huesped = (props) => {
     const fullName = nombres + " " + apellidoP + " " + apellidoM
     return (
         <div>
-        <div class="contenido-propiedades">
-          <div class="usuario-img">
+        <div className="contenido-propiedades">
+          <div className="usuario-img">
             <img src={genero === "Masculino" ? userMalePic : userFemalePic}  alt="Esta es una imagen de un usuario" href="" />
           </div>
   
-          <div class="casa-contenido">
-            <div class="contenido-derecha">
+          <div className="casa-contenido">
+            <div className="contenido-derecha">
               <form action="">
-                <label for="inNombre">Nombre</label>
+                <label htmlFor="inNombre">Nombre</label>
                 <input id="inNombre" type="text" placeholder={fullName} disabled/>
-                  <label for="inDireccion">Propiedad</label>
+                  <label htmlFor="inDireccion">Propiedad</label>
                   <input id="inDireccion" type="text" placeholder={propiedadAsignada} disabled/>
                   </form>
-                  <div class="btnEdicion">
-                  <button class="boton" id="btnsubmit" type="submit"
+                  <div className="btnEdicion">
+                  <button className="boton" id="btnsubmit" type="submit"
                             onClick={() => {
                               navigate(`/huespedes/${id_usuario}`);
                             }}>Ver más</button>
-                            <button class="boton" id="btnsubmit2" type="submit"
+                            <button className="boton" id="btnsubmit2" type="submit"
                             onClick={() => {
                               fetch(`${baseURL}/users/${props.id}`, { method: "DELETE" })
                                 .then(() => {

@@ -36,35 +36,18 @@ export const Login = () => {
     if (loading) return 'Submitting...';
 
     return (
-        // <section className="title">
-        //     Login page
-        //     <form style={{ display: "grid" }} onSubmit={handleLogin}>
-        //         <label>
-        //             Email:
-        //             <input type="text" name="name" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-        //         </label>
-        //         <label>
-        //             Contraseña:
-        //             <input type="text" name="name" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
-        //         </label>
-        //         <input style={{ width: "230px" }} type="submit" value="Submit" />
-        //     </form>
-
-        //     {error && `Error: ${error.message}`}
-        // </section>
-
-        <div class="main-login">
-            <div class="contenedor-login">
-                <div class="contenedor-form">
-                    <img class="img-login" src={imgCandado} alt="imagen de candado" />
+        <div className="main-login">
+            <div className="contenedor-login">
+                <div className="contenedor-form">
+                    <img className="img-login" src={imgCandado} alt="imagen de candado" />
                     <h2>Iniciar Sesion</h2>
                     <form id="formulario-login" onSubmit={handleLogin}>
-                        <input type="text" class="input-login" placeholder="Usuario" id="txt_usuario" required="" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                        <input type="password" class="input-login" placeholder="Password" id="txt_contrasena" required="" value={password} onChange={(e) => setPassword(e.target.value)} />
-                        <input class="checkbox-form" type="checkbox" id="checkid" />
-                        <label for="checkid">Recuerdame</label>
-                        <a class="contrasena-olvidada" href="#">Olvidaste tu contraseña?</a>
-                        <input class="boton-login" id="btnSubmit" type="submit" value="Iniciar Sesion" />
+                        <input type="text" className="input-login" placeholder="Usuario" id="txt_usuario" required="" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        <input type="password" className="input-login" placeholder="Password" id="txt_contrasena" required="" value={password} onChange={(e) => setPassword(e.target.value)} />
+                        <input className="checkbox-form" type="checkbox" id="checkid" />
+                        <label htmlFor="checkid">Recuerdame</label>
+                        <a className="contrasena-olvidada" href="#">Olvidaste tu contraseña?</a>
+                        <input className="boton-login" id="btnSubmit" type="submit" value="Iniciar Sesion" />
                     </form>
                 </div>
             </div>

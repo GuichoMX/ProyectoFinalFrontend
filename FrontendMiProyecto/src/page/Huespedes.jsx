@@ -47,16 +47,16 @@ export const Huespedes = () => {
   return (
 
     <ul className="no-bullets">
-      <main class="main">
-        <div class="hero-propiedades">
-          <div class="hero-contenedor">
+      <main className="main">
+        <div className="hero-propiedades">
+          <div className="hero-contenedor">
             <h1>Mis Usuarios</h1>
           </div>
         </div>
-        <div id="usuarios" class="usuarios">
-          <div class="usuarios-caja">
+        <div id="usuarios" className="usuarios">
+          <div className="usuarios-caja">
           <button><Link to="/createhuespedes">Create Huesped</Link></button>
-            <div class="propiedades-params">
+            <div className="propiedades-params">
               {
                 data.getAllHuespedes.map((huesped) => <Huesped key={huesped.id_usuario} data={huesped} />)
               }
@@ -66,11 +66,5 @@ export const Huespedes = () => {
       </main>
     </ul >
 
-
-    // <div className="container">
-    //     <div className="row">
-    //         {data.getAllHuespedes.map((huesped) => <Huesped key={huesped.id_usuario} data={huesped} />)}
-    //     </div>
-    // </div>
   )
 } 

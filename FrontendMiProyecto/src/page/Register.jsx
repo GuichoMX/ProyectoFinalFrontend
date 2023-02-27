@@ -39,18 +39,18 @@ export const Register = () => {
 
     return (
 
-        <div class="main-login">
-            <div class="contenedor-login">
-                <div class="contenedor-form">
+        <div className="main-login">
+            <div className="contenedor-login">
+                <div className="contenedor-form">
                     <h2>Creando usuario...</h2>
                     <form id="formulario-login" onSubmit={handleSignup}>
-                        <input type="text" class="input-login" placeholder="Nombre" id="txt_usuario" required="" value={name} onChange={(e) => setName(e.target.value)} />
-                        <input type="lastname" class="input-login" placeholder="Apellidos" id="txt_usuario" required="" value={lastname} onChange={(e) => setLastname(e.target.value)} />
-                        <input type="address" class="input-login" placeholder="Correo" id="txt_usuario" required="" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <input type="password" class="input-login" placeholder="Password" id="txt_contrasena" required="" value={password} onChange={(e) => setPassword(e.target.value)} />
-                        <input class="checkbox-form" type="checkbox" id="checkid" />
-                        <label for="checkid">Mostrar contraseña</label>
-                        <input class="boton-login" id="btnSubmit" type="submit" value="Registrar" />
+                        <input type="text" className="input-login" placeholder="Nombre" id="txt_usuario" required="" value={name} onChange={(e) => setName(e.target.value)} />
+                        <input type="lastname" className="input-login" placeholder="Apellidos" id="txt_usuario2" required="" value={lastname} onChange={(e) => setLastname(e.target.value)} />
+                        <input type="address" className="input-login" placeholder="Correo" id="txt_usuario3" required="" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input type="password" className="input-login" placeholder="Password" id="txt_contrasena" required="" value={password} onChange={(e) => setPassword(e.target.value)} />
+                        <input className="checkbox-form" type="checkbox" id="checkid" />
+                        <label htmlFor="checkid">Mostrar contraseña</label>
+                        <input className="boton-login" id="btnSubmit" type="submit" value="Registrar" />
                     </form>
 
                     {data &&

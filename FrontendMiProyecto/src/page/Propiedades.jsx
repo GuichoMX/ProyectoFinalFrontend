@@ -45,16 +45,16 @@ export const Propiedades = () => {
 
 
         <ul className="no-bullets">
-            <main class="main">
-                <div class="hero-propiedades">
-                    <div class="hero-contenedor">
+            <main className="main">
+                <div className="hero-propiedades">
+                    <div className="hero-contenedor">
                         <h1>Propiedades</h1>
                     </div>
                 </div>
-                <section id="propiedades" class="propiedades">
-                    <div class="propiedades-caja">
+                <section id="propiedades" className="propiedades">
+                    <div className="propiedades-caja">
                     <button><Link to="/createpropiedad">Create Property</Link></button>
-                        <div class="propiedades-params" id="contenidoMain">
+                        <div className="propiedades-params" id="contenidoMain">
                             {
                                 data.getAllPropiedades.map((propiedad) => <Propiedad key={propiedad.id_propiedad} data={propiedad} />)
                             }
@@ -63,11 +63,5 @@ export const Propiedades = () => {
                 </section>
             </main>
         </ul >
-
-        // <div className="container">
-        //     <div className="row">
-        //         {data.getAllPropiedades.map((propiedad) => <Propiedad key={propiedad.id_propiedad} data={propiedad} />)}
-        //     </div>
-        // </div>
     )
 } 

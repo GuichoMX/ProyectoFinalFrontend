@@ -6,37 +6,37 @@ export const Propiedad = (props) => {
     return (
 
         <div>
-            <div class="contenido-propiedades">
-                <div class="casa-img">
+            <div className="contenido-propiedades">
+                <div className="casa-img">
                     <img src={Casa} alt="Esta es una imagen de una casa" />
                 </div>
 
-                <div class="casa-contenido">
-                    <div class="contenido-izquierda">
+                <div className="casa-contenido">
+                    <div className="contenido-izquierda">
                         <form action="">
-                            <label for="inNombre">Nombre</label>
+                            <label htmlFor="inNombre">Nombre</label>
                             <input id="inNombre" type="text" placeholder={nombre} disabled />
-                            <label for="inDireccion">Dirección</label>
+                            <label htmlFor="inDireccion">Dirección</label>
                             <input id="inDireccion" type="text" placeholder={direccion} disabled />
                         </form>
-                        <div class="espacio">
+                        <div className="espacio">
                             <a href=""></a>
                         </div>
                     </div>
 
-                    <div class="contenido-derecha">
+                    <div className="contenido-derecha">
                         <form action="">
-                            <label for="inNombre">Usuario</label>
+                            <label htmlFor="inNombre">Usuario</label>
                             <input id="inUsuario" type="text" placeholder={id_usuario} disabled />
-                            <label for="inDireccion">Disponibilidad</label>
+                            <label htmlFor="inDireccion">Disponibilidad</label>
                             <input id="inDireccion" type="text" placeholder={estado ? "Ocupado" : "Disponible"} disabled />
                         </form>
-                        <div class="btnEdicion">
-                            <button class="boton" id="btnsubmit" type="submit"
+                        <div className="btnEdicion">
+                            <button className="boton" id="btnsubmit" type="submit"
                                 onClick={() => {
                                     navigate(`/properties/${props.id}`);
                                 }}>Ver más</button>
-                            <button class="boton" id="btnsubmit2" type="submit"
+                            <button className="boton" id="btnsubmit2" type="submit"
                                 onClick={() => {
                                     fetch(`${baseURL}/properties/${props.id}`, { method: "DELETE" })
                                         .then(() => {
@@ -67,21 +67,7 @@ export const Propiedad = (props) => {
                         })
                 }}
             />
-            <label for="inNombre">¿Esta ocupado?</label>
+            <label htmlFor="inNombre">¿Esta ocupado?</label>
         </div>
-
-
-
-        // <div className="card" style={{ width: '20rem' }}>
-        //     <img className="card-img-top" src="https://via.placeholder.com/300x180?text=Propiedad image" alt="Propiedad image" />
-        //     <div className="card-body">
-        //         <h3 className="card-title">{nombre}</h3>
-        //         <p className="card-text">Direccion: {direccion}</p>
-        //         <p className="card-text">Entrada: {fecha_inicio}</p>
-        //         <p className="card-text">Salida: {fecha_final}</p>
-        //         <p className="card-text">Máximo de personas: {max_personas}</p>
-        //         <p className="card-text">Usuario: {id_usuario}</p>
-        //     </div>
-        // </div>
     )
 } 

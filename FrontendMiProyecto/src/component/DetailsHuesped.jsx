@@ -23,7 +23,7 @@ propiedadAsignada
 
 export const DetailsHuesped = () => {
 const { id_usuario } = useParams();
-console.log(id_usuario)
+console.log("Mi id de usuario es: "+id_usuario)
 
   const navigate = useNavigate()
 
@@ -58,19 +58,19 @@ console.log(id_usuario)
                         <div class="contenido-propiedades-user-detail">
                                 <div class="contenido-user-detail">
                                     <form action="">
-                                        <label for="inNombre">Nombre:</label>
+                                        <label htmlFor="inNombre">Nombre:</label>
                                         <input id="inNombre" type="text" placeholder="" disabled />
-                                        <label for="inDireccion">Propiedad asignada:</label>
+                                        <label htmlFor="inDireccion">Propiedad asignada:</label>
                                         <input id="inDireccion" type="text" placeholder="" disabled />
-                                        <label for="inNombre">Age:</label>
+                                        <label htmlFor="inNombre">Age:</label>
                                         <input id="inNombre" type="text" placeholder="" disabled />
-                                        <label for="inNombre">State:</label>
+                                        <label htmlFor="inNombre">State:</label>
                                         <input id="inNombre" type="text" placeholder="" disabled />
-                                        <label for="inNombre">City:</label>
+                                        <label htmlFor="inNombre">City:</label>
                                         <input id="inNombre" type="text" placeholder="" disabled />
-                                        <label for="inNombre">Cellphone:</label>
+                                        <label htmlFor="inNombre">Cellphone:</label>
                                         <input id="inNombre" type="text" placeholder="" disabled />
-                                        <label for="inNombre">Reference number:</label>
+                                        <label htmlFor="inNombre">Reference number:</label>
                                         <input id="inNombre" type="text" placeholder="" disabled />
                                     </form>
                                 </div>

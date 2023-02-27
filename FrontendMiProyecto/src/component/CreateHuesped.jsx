@@ -63,25 +63,25 @@ export const CreateHuesped = () => {
 
     return (
 
-        <div class="main-login">
-            <div class="contenedor-login">
-                <div class="contenedor-form-huesped">
+        <div className="main-login">
+            <div className="contenedor-login">
+                <div className="contenedor-form-huesped">
                     <h2>Creando usuario...</h2>
                     <form id="formulario-login" onSubmit={handleCreationUser}>
-                        <input type="text" class="input-login" placeholder="Nombres" id="txt_usuario" required="" value={nombres} onChange={(e) => setNombres(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Apellido Paterno" id="txt_usuario" required="" value={apellidoP} onChange={(e) => setApellidoP(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Apellido Materno" id="txt_usuario" required="" value={apellidoM} onChange={(e) => setApellidoM(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Edad" id="txt_usuario" required="" value={edad} onChange={(e) => setEdad(parseInt(e.target.value))} />
-                        <input type="text" class="input-login" placeholder="Pais" id="txt_usuario" required="" value={pais} onChange={(e) => setPais(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Ciudad" id="txt_usuario" required="" value={ciudad} onChange={(e) => setCiudad(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Número de contacto" id="txt_usuario" required="" value={num_contacto} onChange={(e) => setNumContacto(e.target.value)} />
-                        <input type="text" class="input-login" placeholder="Número de referencia" id="txt_usuario" required="" value={num_referencia} onChange={(e) => setNumReferencia(e.target.value)} />
-                        <select name="gender" class="user-gender" value={genero} onClick={(e) => setGenero(e.target.value)}>
+                        <input type="text" className="input-login" placeholder="Nombres" id="txt_usuario" required="" value={nombres} onChange={(e) => setNombres(e.target.value)} />
+                        <input type="text" className="input-login" placeholder="Apellido Paterno" id="txt_usuario" required="" value={apellidoP} onChange={(e) => setApellidoP(e.target.value)} />
+                        <input type="text" className="input-login" placeholder="Apellido Materno" id="txt_usuario" required="" value={apellidoM} onChange={(e) => setApellidoM(e.target.value)} />
+                        <input type="text" className="input-login" placeholder="Edad" id="txt_usuario" required="" value={edad} onChange={(e) => setEdad(parseInt(e.target.value))} />
+                        <input type="text" className="input-login" placeholder="Pais" id="txt_usuario" required="" value={pais} onChange={(e) => setPais(e.target.value)} />
+                        <input type="text" className="input-login" placeholder="Ciudad" id="txt_usuario" required="" value={ciudad} onChange={(e) => setCiudad(e.target.value)} />
+                        <input type="text" className="input-login" placeholder="Número de contacto" id="txt_usuario" required="" value={num_contacto} onChange={(e) => setNumContacto(e.target.value)} />
+                        <input type="text" className="input-login" placeholder="Número de referencia" id="txt_usuario" required="" value={num_referencia} onChange={(e) => setNumReferencia(e.target.value)} />
+                        <select name="gender" className="user-gender" value={genero} onClick={(e) => setGenero(e.target.value)}>
                             <option value="Femenino">Femenino</option>
                             <option value="Masculino">Masculino</option>
                         </select>
-                        <input type="text" class="input-login" placeholder="Propiedad asignada" id="txt_usuario" required="" value={propiedadAsignada} onChange={(e) => setPropiedadAsignada(e.target.value)} />
-                        <input class="boton-create-huesped" id="btnSubmit" type="submit" value="Registrar" />
+                        <input type="text" className="input-login" placeholder="Propiedad asignada" id="txt_usuario" required="" value={propiedadAsignada} onChange={(e) => setPropiedadAsignada(e.target.value)} />
+                        <input className="boton-create-huesped" id="btnSubmit" type="submit" value="Registrar" />
                     </form>
 
                     {data &&
